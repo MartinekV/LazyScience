@@ -1,5 +1,4 @@
 import streamlit as st
-from paperqa import Docs
 import os
 
 st.title("Scientific paper QA assistant")
@@ -12,6 +11,7 @@ if(api_input):
 
 #TODO try local llama to avoid api costs
 if "docs" not in st.session_state and api_input:
+    from paperqa import Docs
     docs = Docs()
     st.session_state.docs = docs
 
