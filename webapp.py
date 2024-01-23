@@ -3,7 +3,7 @@ import os
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 
-st.title("Scientific paper QA assistant\nQuery costs ~0.03$")
+st.title("LazyScience - Scientific paper QA assistant\nQuery costs ~0.03$")
 print(list(st.session_state.keys()))
 
 #TODO try local llama to avoid api costs
